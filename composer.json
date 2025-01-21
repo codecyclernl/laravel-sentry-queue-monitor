@@ -1,0 +1,24 @@
+{
+  "name": "codecycler/laravel-sentry-queue-monitor",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "illuminate/support": "^10|^11",
+    "illuminate/console": "^10|^11",
+    "illuminate/queue": "^10|^11",
+    "illuminate/bus": "^10|^11",
+    "sentry/sentry-laravel": "^4.10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Codecycler\\SentryQueueMonitor\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Codecycler\\SentryQueueMonitor\\MonitorServiceProvider"
+      ]
+    }
+  }
+}
